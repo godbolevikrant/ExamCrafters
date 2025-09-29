@@ -7,7 +7,8 @@ import {
   FaInfoCircle,
   FaEnvelope,
   FaBars,
-  FaTimes
+  FaTimes,
+  FaSignInAlt
 } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -20,6 +21,7 @@ function Navbar() {
     { to: "/results", label: "Results", icon: <FaChartBar /> },
     { to: "/about", label: "About", icon: <FaInfoCircle /> },
     { to: "/contact", label: "Contact", icon: <FaEnvelope /> },
+    { to: "/login", label: "Login", icon: <FaSignInAlt /> },
   ];
 
   return (
