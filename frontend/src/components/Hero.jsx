@@ -47,20 +47,20 @@ function Hero() {
         initial="hidden"
         animate="visible"
       >
-        <div className="container-fluid px-0 py-5 w-100">
+        <div className="container px-3 px-md-4 px-lg-5 py-5 w-100">
           <motion.h1
             className="display-3 fw-bold mb-4 w-100"
             style={{ fontFamily: "'Inter', sans-serif" }}
             variants={itemVariants}
           >
-            Welcome to ExamCrafters
+            NEET & JEE Preparation Made Simple
           </motion.h1>
           <motion.p
             className="lead mb-5 fs-4 mx-auto"
             style={{ maxWidth: '700px', fontFamily: "'Inter', sans-serif" }}
             variants={itemVariants}
           >
-            Your ultimate platform for NEET MCQ practice and exam success
+            Master Physics, Chemistry, and Biology with exam‑style MCQs, mocks, and analytics.
           </motion.p>
           <motion.div
             className="d-flex flex-column flex-md-row justify-content-center gap-3"
@@ -90,7 +90,7 @@ function Hero() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="container-fluid px-0">
+        <div className="container px-3 px-md-4 px-lg-5">
           <motion.h2
             className="fw-bold mb-4 text-center"
             style={{ fontFamily: "'Inter', sans-serif" }}
@@ -103,7 +103,7 @@ function Hero() {
             style={{ maxWidth: '800px', fontFamily: "'Inter', sans-serif" }}
             variants={itemVariants}
           >
-            ExamCrafters is your trusted partner in NEET preparation, offering cutting-edge tools, 
+            ExamCrafters is your trusted partner in NEET/JEE preparation, offering cutting-edge tools, 
             expertly curated content, and personalized insights to help you excel in your exams.
           </motion.p>
         </div>
@@ -117,7 +117,25 @@ function Hero() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="container-fluid px-0">
+        <div className="container px-3 px-md-4 px-lg-5">
+          {/* NEET & JEE Highlight Section */}
+          <motion.div
+            className="py-5 w-100 m-0 alt-section-bg rounded-3"
+            variants={itemVariants}
+          >
+            <div className="container px-3 px-md-4 px-lg-5">
+              <h2
+                className="fw-bold mb-3 text-center"
+                style={{ fontFamily: "'Inter', sans-serif" }}
+              >
+                Built for NEET & JEE Aspirants
+              </h2>
+              <p className="section-subtitle text-center mx-auto mb-0" style={{maxWidth: '820px'}}>
+                Tailored practice and analytics for Physics, Chemistry, Biology, and Maths with exam-realistic mocks and topic-wise insights.
+              </p>
+            </div>
+          </motion.div>
+          <div className="my-4" />
           <motion.h2
             className="fw-bold mb-5 text-center"
             style={{ fontFamily: "'Inter', sans-serif" }}
@@ -131,7 +149,7 @@ function Hero() {
           >
             Explore powerful tools crafted to accelerate your preparation — from rich practice tests to clear analytics and proven strategies.
           </motion.p>
-          <div className="row g-4 m-0">
+          <div className="row g-4">
             {services.map((service, idx) => (
               <motion.div
                 key={idx}
@@ -167,7 +185,7 @@ function Hero() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="container-fluid px-0">
+        <div className="container px-3 px-md-4 px-lg-5">
           <motion.h2
             className="fw-bold mb-5 text-center"
             style={{ fontFamily: "'Inter', sans-serif" }}
@@ -181,7 +199,7 @@ function Hero() {
           >
             Preview core experiences before you dive in — see how mock tests, subject quizzes, and study plans come together.
           </motion.p>
-          <div className="row g-4 m-0">
+          <div className="row g-4">
             {portfolioItems.map((item, idx) => (
               <motion.div
                 key={idx}

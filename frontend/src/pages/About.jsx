@@ -11,10 +11,10 @@ function About() {
     >
       {/* Header */}
       <div className="py-5 w-100 m-0 text-center">
-        <h1 className="fw-bold mb-3" style={{ fontFamily: "'Inter', sans-serif" }}>About ExamCrafters</h1>
+        <h1 className="fw-bold mb-3" style={{ fontFamily: "'Inter', sans-serif" }}>About ExamCrafters for NEET & JEE</h1>
         <p className="section-subtitle mx-auto" style={{ maxWidth: '820px' }}>
-          We help students prepare smarter for competitive exams with practice-ready MCQs, real-time analytics,
-          and focused revision tools built for sustained progress.
+          We help NEET & JEE aspirants prepare smarter with syllabus-aligned MCQs, real-time analytics,
+          and focused revision tools built for long-term retention and confident performance.
         </p>
       </div>
 
@@ -34,12 +34,12 @@ function About() {
         <div className="col-md-6">
           <div className="card border-0 shadow-sm rounded-3 home-card h-100">
             <div className="card-body p-4">
-              <h4 className="fw-bold mb-3" style={{ fontFamily: "'Inter', sans-serif" }}>What We Offer</h4>
+              <h4 className="fw-bold mb-3" style={{ fontFamily: "'Inter', sans-serif" }}>What We Offer for NEET & JEE</h4>
               <ul className="mb-0" style={{ lineHeight: 1.9 }}>
-                <li>Extensive MCQ bank with detailed solutions</li>
-                <li>Timed mocks and subject-wise quizzes</li>
-                <li>Performance analytics and insights</li>
-                <li>Personalized revision recommendations</li>
+                <li>Extensive NEET/JEE MCQ bank with step-by-step solutions</li>
+                <li>Timed mocks and subject-wise quizzes (Physics, Chemistry, Biology/Maths)</li>
+                <li>Performance analytics with topic-level strengths and gaps</li>
+                <li>Adaptive revision recommendations and custom study plans</li>
               </ul>
             </div>
           </div>

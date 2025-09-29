@@ -87,6 +87,38 @@ a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* Brand */
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  font-size: 0.9rem;
+  color: var(--color-primary-contrast);
+  background: radial-gradient(120px 60px at 50% -20%, rgba(34, 211, 238, 0.5), transparent 60%),
+              linear-gradient(180deg, var(--color-primary), #5e3ef5);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18), 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.brand-text {
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  color: var(--color-text);
+}
+
+.brand-accent {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .modern-link {
   color: var(--color-text) !important;
   position: relative;
@@ -219,6 +251,15 @@ a:hover {
 .hero-gradient {
   background: radial-gradient(1200px 600px at 50% -10%, rgba(124, 92, 255, 0.25), transparent 60%),
               linear-gradient(180deg, rgba(34, 211, 238, 0.08), rgba(12, 18, 34, 0.6));
+}
+
+/* Alternate section background for highlights */
+.alt-section-bg {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
+    rgba(18, 24, 41, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-sm);
 }
 
 /* Utilities for Home */

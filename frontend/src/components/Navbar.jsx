@@ -28,8 +28,11 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg shadow-sm modern-navbar sticky-top">
       <div className="container-fluid px-0 py-2">
         {/* Logo */}
-        <Link className="navbar-brand fw-bold text-white " to="/">
-          ExamCrafters
+        <Link className="navbar-brand d-flex align-items-center gap-2 text-white ms-3" to="/">
+          <span className="brand-mark" aria-hidden="true">EC</span>
+          <span className="brand-text fw-bold">
+            Exam<span className="brand-accent">Crafters</span>
+          </span>
         </Link>
 
         {/* Mobile toggle */}
