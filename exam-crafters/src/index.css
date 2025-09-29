@@ -192,6 +192,29 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* Contact form theme alignment */
+.contact-form .form-control {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-text);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.contact-form .form-control:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(124, 92, 255, 0.45);
+  box-shadow: 0 0 0 0.2rem rgba(124, 92, 255, 0.15);
+  color: var(--color-text);
+}
+
+.contact-form .form-label {
+  color: var(--color-text);
+}
+
+/* Placeholder color for contact form */
+.contact-form .form-control::placeholder {
+  color: rgba(230, 233, 239, 0.65);
+}
+
 /* Hero */
 .hero-gradient {
   background: radial-gradient(1200px 600px at 50% -10%, rgba(124, 92, 255, 0.25), transparent 60%),
