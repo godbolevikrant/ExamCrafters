@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaBook, FaChartBar, FaRocket } from 'react-icons/fa';
+import { FaBook, FaChartBar, FaRocket, FaClock, FaLightbulb, FaCertificate } from 'react-icons/fa';
 
 // Animation variants
 const containerVariants = {
@@ -22,6 +22,9 @@ function Hero() {
     { icon: <FaBook />, title: 'Practice Tests', description: 'Access thousands of NEET MCQs with detailed explanations to master every topic.' },
     { icon: <FaChartBar />, title: 'Performance Analytics', description: 'Track your progress with personalized insights and detailed performance reports.' },
     { icon: <FaRocket />, title: 'Exam Strategies', description: 'Learn expert techniques to boost your confidence and NEET score.' },
+    { icon: <FaClock />, title: 'Timed Mock Exams', description: 'Simulate real exam pressure with timed tests and pacing guidance.' },
+    { icon: <FaLightbulb />, title: 'Concept Boosters', description: 'Strengthen weak areas with smart recommendations and micro-lessons.' },
+    { icon: <FaCertificate />, title: 'Achievements & Badges', description: 'Stay motivated with milestones, badges, and shareable achievements.' },
   ];
 
   const portfolioItems = [
