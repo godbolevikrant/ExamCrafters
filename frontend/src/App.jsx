@@ -14,6 +14,9 @@ import StudentPanel from './pages/StudentPanel';
 import DashboardLayout from './layouts/DashboardLayout';
 import AdminProfile from './pages/AdminProfile';
 import AdminSettings from './pages/AdminSettings';
+import AdminUsers from './pages/AdminUsers';
+import AdminQuestionBank from './pages/AdminQuestionBank';
+import AdminAnalytics from './pages/AdminAnalytics';
 import StudentProfile from './pages/StudentProfile';
 import StudentSettings from './pages/StudentSettings';
 import './App.css';
@@ -46,6 +49,9 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/admin" element={<DashboardLayout variant="admin" />}>
             <Route index element={<AdminPanel />} />
+            <Route path="users" element={<AdminUsers />} />
+            <Route path="question-bank" element={<AdminQuestionBank />} />
+            <Route path="analytics" element={<AdminAnalytics />} />
             <Route path="profile" element={<AdminProfile />} />
             <Route path="settings" element={<AdminSettings />} />
           </Route>

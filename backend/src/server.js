@@ -5,6 +5,8 @@ import morgan from 'morgan';
 import { connectDb } from './utils/db.js';
 import authRoutes from './routes/auth.routes.js';
 import userRoutes from './routes/user.routes.js';
+import papersetRoutes from './routes/paperset.routes.js';
+import analyticsRoutes from './routes/analytics.routes.js';
 import { notFound, errorHandler } from './middlewares/error.middleware.js';
 
 const app = express();
@@ -17,8 +19,11 @@ app.get('/api/health', (_req, res) => {
   res.json({ ok: true, service: 'exam-crafters', timestamp: Date.now() });
 });
 
+
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/papersets', papersetRoutes);
+app.use('/api/analytics', analyticsRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

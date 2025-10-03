@@ -18,11 +18,20 @@ function DashboardLayout({ variant = 'admin' }) {
     navigate('/login');
   }
 
-  const menu = [
-    { to: base, label: 'Dashboard', icon: <FaTachometerAlt /> },
-    { to: `${base}/profile`, label: 'Profile', icon: <FaUser /> },
-    { to: `${base}/settings`, label: 'Settings', icon: <FaCog /> },
-  ];
+  const menu = isAdmin
+    ? [
+        { to: base, label: 'Dashboard', icon: <FaTachometerAlt /> },
+        { to: `${base}/users`, label: 'Users', icon: <FaUser /> },
+        { to: `${base}/question-bank`, label: 'Question Bank', icon: <FaTachometerAlt /> },
+        { to: `${base}/analytics`, label: 'Analytics', icon: <FaTachometerAlt /> },
+        { to: `${base}/profile`, label: 'Profile', icon: <FaUser /> },
+        { to: `${base}/settings`, label: 'Settings', icon: <FaCog /> },
+      ]
+    : [
+        { to: base, label: 'Dashboard', icon: <FaTachometerAlt /> },
+        { to: `${base}/profile`, label: 'Profile', icon: <FaUser /> },
+        { to: `${base}/settings`, label: 'Settings', icon: <FaCog /> },
+      ];
 
   return (
     <div className="container-fluid px-0">

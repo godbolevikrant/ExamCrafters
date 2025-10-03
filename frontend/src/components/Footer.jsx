@@ -41,8 +41,20 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div className="col-lg-5 col-md-12">
+          {/* Contact Details */}
+          <div className="col-lg-5 col-md-12 mb-4 mb-lg-0">
+            <h5 className="fw-bold text-uppercase mb-3 footer-heading">Contact Us</h5>
+            <ul className="list-unstyled footer-contact-details mb-3">
+              <li className="mb-2">
+                <span className="fw-semibold">Email:</span> <a href="mailto:contact@examcrafters.com" className="footer-link">contact@examcrafters.com</a>
+              </li>
+              <li className="mb-2">
+                <span className="fw-semibold">Phone:</span> <a href="tel:+1234567890" className="footer-link">+1 234 567 890</a>
+              </li>
+              <li>
+                <span className="fw-semibold">Address:</span> 123 Exam St, Knowledge City, Country
+              </li>
+            </ul>
             <h5 className="fw-bold text-uppercase mb-3 footer-heading">Newsletter</h5>
             <p className="footer-text mb-3">Subscribe to get the latest updates and tips!</p>
             <div className="input-group footer-input-group">
